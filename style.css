@@ -424,18 +424,10 @@ header {
 .shop .sub-title {
     max-width: 695px;
     margin: auto;
-    position: relative;
 }
 
 .shop .sub-title h4 {
     font-weight: 700;
-}
-
-.shop .image {
-    position: absolute;
-    top: -11px;
-    right: 0;
-    left: 224px
 }
 
 .shop .text {
@@ -589,7 +581,6 @@ header {
 .experience .sub-title {
     max-width: 775px;
     margin: auto;
-    position: relative;
 }
 
 .sub-title h4 {
@@ -598,13 +589,6 @@ header {
 
 .text h4 {
     font-weight: 600;
-}
-
-.experience .image {
-    position: absolute;
-    top: -18px;
-    right: -115px;
-    left: 0;
 }
 
 .experience .leaf {
@@ -757,8 +741,8 @@ footer .footer-image img {
 
 .footer-list a:hover {
     color: var(--extra-color);
-    text-decoration: underline;
-    text-underline-offset: 5px;
+    /* text-decoration: underline;
+    text-underline-offset: 5px; */
 }
 
 footer .contact-link p3 {
