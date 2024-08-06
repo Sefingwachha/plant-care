@@ -201,19 +201,6 @@
         padding: 0 15px;
     }
 
-    .shop .image {
-        top: -5px;
-        right: 0;
-        left: 100px;
-        max-width: 150px;
-    }
-
-    .experience .image {
-        top: -4px;
-        left: 145px;
-        max-width: 130px;
-    }
-
     .gallery,
     .experience,
     .work,
@@ -223,6 +210,20 @@
 
     .experience .experience-group {
         padding-top: 25px;
+    }
+
+    .subscribe .title h5 {
+        font-size: 22px;
+    }
+
+    .work-content .title h5 {
+        font-size: 24px;
+        padding-bottom: 0;
+    }
+
+    .experience .sub-title {
+        flex-wrap: wrap;
+        justify-content: center !important;
     }
 
     .gallery .gallery-content {
@@ -338,7 +339,7 @@
     }
 
     .btn-cart .svg-icon path {
-        fill: var(--extra-color);
+        fill: #35A252;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link:hover {
