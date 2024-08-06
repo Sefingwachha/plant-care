@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care</title>
+    <link rel="icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="plant.html" class="nav-link">Plants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="accesories.html" class="nav-link">Accesories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="care.html" class="nav-link">Plants Care</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button type="button" class="btn btn-cart">
+                        <svg class="svg-icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.88577 5.55672C9.47103 5.32378 10.1132 5.66921 10.32 6.32824C10.7834 7.80464 12.0339 8.85938 13.5002 8.85938C14.9666 8.85938 16.2172 7.80464 16.6806 6.32824C16.8874 5.66921 17.5295 5.32378 18.1149 5.55672C18.7001 5.78966 19.0068 6.51274 18.8 7.17176C18.029 9.62788 15.9489 11.3906 13.5002 11.3906C11.0517 11.3906 8.97156 9.62788 8.20063 7.17176C7.99376 6.51274 8.30052 5.78966 8.88577 5.55672ZM14.0403 2.53125H12.9595C10.5231 2.53125 8.90158 2.53576 7.67342 2.70663C6.50702 2.8689 5.96938 3.15104 5.5921 3.50364C5.21479 3.85622 4.86946 4.39928 4.51285 5.6603C4.13738 6.98809 3.8346 8.78204 3.38559 11.4785C2.75621 15.2584 2.33426 17.8257 2.2593 19.7594C2.18705 21.6235 2.46442 22.4159 2.85388 22.9443C3.24333 23.4726 3.88386 23.9257 5.5241 24.1893C7.22579 24.4627 9.54444 24.4688 12.9595 24.4688H14.0403C17.4556 24.4688 19.7743 24.4627 21.4759 24.1893C23.1161 23.9257 23.7566 23.4726 24.1461 22.9443C24.5356 22.4159 24.813 21.6235 24.7407 19.7594C24.6658 17.8257 24.2438 15.2584 23.6144 11.4785C23.1654 8.78204 22.8626 6.98809 22.4872 5.6603C22.1305 4.39928 21.7852 3.85622 21.4079 3.50364C21.0307 3.15104 20.493 2.8689 19.3266 2.70663C18.0984 2.53576 16.4767 2.53125 14.0403 2.53125ZM4.1565 1.55581C2.49173 3.11163 2.05321 5.74513 1.1762 11.0121C-0.0570218 18.4184 -0.673634 22.1216 1.12411 24.5607C2.92185 27 6.26778 27 12.9595 27H14.0403C20.7322 27 24.0781 27 25.8759 24.5607C27.6736 22.1216 27.057 18.4184 25.8238 11.0121C24.9468 5.74513 24.5083 3.11163 22.8435 1.55581C21.1787 -2.01166e-07 18.7993 0 14.0403 0H12.9595C8.20073 0 5.82129 -2.01166e-07 4.1565 1.55581Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+                                <g fill="none" fill-rule="evenodd" stroke="#2D415D" stroke-linecap="square"
+                                    stroke-width="2">
+                                    <path d="M0 1L20 1M0 7L20 7M0 13L15 13" transform="translate(1)"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner">
+        <div class="container">
+            <div class="plant-1">
+                <img src="images/plant-1.png" alt="">
+            </div>
+            <div class="title text-center">
+                <p1>Make space in your home for</p1>
+                <h1>Plants</h1>
+                <p3>We have a wide range to choose from, including cacti and orchids. And you might like to check out
+                    our plants pots too.
+                </p3>
+            </div>
+            <div class="button">
+                <a href="#" class="primary-btn">Shop Now</a>
+            </div>
+            <div class="plant-2">
+                <img src="images/plant-2.png" alt="">
+            </div>
+            <div class="plant-3">
+                <img src="images/plant-3.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+
+    <section class="about-us">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-7">
+                    <div class="title">
+                        <p1>If you have a garden and a library,
+                            you have everything you need.</p1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end">
+                    <div class="image">
+                        <img src="images/about-plant.png" alt="gamala">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-title">
+                <h1>About</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop -->
+
+    <section class="shop">
+        <div class="container">
+            <div class="shop-wrapper">
+                <div class="title text-center">
+                    <h4>
+                        Choose Your desired one from our
+                    </h4>
+
+                </div>
+                <div class="sub-title d-flex justify-content-between">
+                    <h4>awesome</h4>
+                    <h4>collections.</h4>
+
+                    <div class="image">
+                        <img src="images/title-plant.png" alt="">
+                    </div>
+                </div>
+                <div class="text text-center">
+                    <p3>Make space in your home for plant. you’ll feel better for it, Not only are they beautiful, but
+                        caring for them helps us.</p3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product -->
+
+    <section class="product">
+        <div class="container-fluid wrapper">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="button-group btns d-flex flex-column align-items-start" role="group"
+                        aria-label="Button group with nested dropdown">
+                        <button type="button" class="custom-btn is-checked" data-filter="*">All Products</button>
+                        <button type="button" class="custom-btn" data-filter=".plants">Plants</button>
+                        <button type="button" class="custom-btn" data-filter=".outdoor">Outdoor Plant</button>
+                        <button type="button" class="custom-btn" data-filter=".pots">Pots, Plant
+                            Stands & Movers</button>
+                        <button type="button" class="custom-btn" data-filter=".dried">Dried Flowers</button>
+                        <button type="button" class="custom-btn" data-filter=".growing">Growing
+                            Accessories</button>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+                    <ul class="grid">
+                        <li class="element-item outdoor">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/fatsia.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="product-detail.html">
+                                        <p>Fatsia japonica</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item plants">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/rhapis.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Rhapis Palm</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item outdoor">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/lucky.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Lucky Bamboo (3 Tier)</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item plants">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/jade.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Jade Plant With
+                                            Ceramic pot</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item dried">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/monstera.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Monstera Deliciosa</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item outdoor">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/ponty.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Pony Tail Palm</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item growing">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/parlor.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Parlor Palm</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="element-item pots">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <img src="images/lucky.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <a href="#">
+                                        <p>Lucky Bamboo (3 Tier)</p>
+                                    </a>
+                                    <p>$ 70</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- how we work -->
+
+    <section class="work">
+        <div class="container">
+            <div class="row gy-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="images/work.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 work-content">
+                    <div class="title">
+                        <h5>
+                            How we work?
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="delivery">
+                        <div class="free-shipping d-flex">
+                            <svg width="60" height="41.25" viewBox="0 0 60 41.25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 0.5V4.25H35.625V32.375H24.082C23.2471 29.1523 20.3467 26.75 16.875 26.75C13.4033 26.75 10.5029 29.1523 9.66797 32.375H7.5V23H3.75V36.125H9.66797C10.5029 39.3477 13.4033 41.75 16.875 41.75C20.3467 41.75 23.2471 39.3477 24.082 36.125H39.668C40.5029 39.3477 43.4033 41.75 46.875 41.75C50.3467 41.75 53.2471 39.3477 54.082 36.125H60V20.832L59.8828 20.5391L56.1328 9.28906L55.7227 8H39.375V0.5H0ZM1.875 8V11.75H18.75V8H1.875ZM39.375 11.75H53.0273L56.25 21.3594V32.375H54.082C53.2471 29.1523 50.3467 26.75 46.875 26.75C43.4033 26.75 40.5029 29.1523 39.668 32.375H39.375V11.75ZM3.75 15.5V19.25H15V15.5H3.75ZM16.875 30.5C18.9697 30.5 20.625 32.1553 20.625 34.25C20.625 36.3447 18.9697 38 16.875 38C14.7803 38 13.125 36.3447 13.125 34.25C13.125 32.1553 14.7803 30.5 16.875 30.5ZM46.875 30.5C48.9697 30.5 50.625 32.1553 50.625 34.25C50.625 36.3447 48.9697 38 46.875 38C44.7803 38 43.125 36.3447 43.125 34.25C43.125 32.1553 44.7803 30.5 46.875 30.5Z"
+                                    fill="#2D415D" />
+                            </svg>
+                            <div class="title">
+                                <h6>Free Shipping</h6>
+                                <p>Get plants delivered to your doorstep without hassle! Get plants delivered to your
+                                    doorstep without hassle!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="free-shipping d-flex">
+                            <svg width="49" height="50" viewBox="0 0 49 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M44.5001 20.95C43.7251 13 39.0251 0.5 24.5001 0.5C9.97512 0.5 5.27512 13 4.50012 20.95C1.7814 21.9818 -0.0119113 24.5921 5.95669e-05 27.5V31C5.95669e-05 34.866 3.13413 38 7.00012 38C10.8661 38 14.0001 34.866 14.0001 31V27.5C13.9876 24.6549 12.2601 22.0982 9.62512 21.025C10.1251 16.425 12.5751 5.5 24.5001 5.5C36.4251 5.5 38.8501 16.425 39.3501 21.025C36.7205 22.1006 35.0017 24.6589 35.0001 27.5V31C35.011 33.6875 36.5541 36.1332 38.9751 37.3C37.9251 39.275 35.2501 41.95 28.6751 42.75C27.3608 40.7542 24.818 39.9675 22.6062 40.8722C20.3945 41.777 19.1321 44.1203 19.5933 46.4651C20.0546 48.8098 22.1105 50.5 24.5001 50.5C26.3885 50.4895 28.1098 49.4161 28.9501 47.725C39.6751 46.5 43.1001 40.975 44.1751 37.725C47.0834 36.7829 49.0393 34.0568 49.0001 31V27.5C49.0122 24.5921 47.2188 21.9818 44.5001 20.95ZM9.00012 31C9.00012 32.1046 8.10469 33 7.00012 33C5.89555 33 5.00012 32.1046 5.00012 31V27.5C5.00012 26.7855 5.38132 26.1252 6.00012 25.7679C6.61892 25.4107 7.38132 25.4107 8.00012 25.7679C8.61892 26.1252 9.00012 26.7855 9.00012 27.5V31ZM40.0001 27.5C40.0001 26.3954 40.8955 25.5 42.0001 25.5C43.1047 25.5 44.0001 26.3954 44.0001 27.5V31C44.0001 32.1046 43.1047 33 42.0001 33C40.8955 33 40.0001 32.1046 40.0001 31V27.5Z"
+                                    fill="#2D415D" />
+                            </svg>
+                            <div class="title">
+                                <h6>24/7 Support</h6>
+                                <p>Make space in your home for plant. you’ll feel better for it, Not only are they
+                                    beautiful, but caring for them helps us.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="free-shipping d-flex">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.9782 0.5C24.1902 0.504215 18.527 2.18268 13.6714 5.333C8.8159 8.48332 4.97534 12.971 2.61285 18.2549C0.250362 23.5388 -0.533177 29.3932 0.356713 35.1124C1.2466 40.8316 3.77192 46.1712 7.62817 50.4875C8.21552 51.1845 8.8415 51.8481 9.50317 52.475C9.91567 52.8687 10.3469 53.2625 10.7969 53.6375C11.2469 54.0125 11.9032 54.5 12.4469 54.875H11.2282C10.7309 54.875 10.254 55.0725 9.90235 55.4242C9.55071 55.7758 9.35317 56.2527 9.35317 56.75C9.35317 57.2473 9.55071 57.7242 9.90235 58.0758C10.254 58.4275 10.7309 58.625 11.2282 58.625H16.8532C17.3505 58.625 17.8274 58.4275 18.179 58.0758C18.5306 57.7242 18.7282 57.2473 18.7282 56.75V51.125C18.7282 50.6277 18.5306 50.1508 18.179 49.7992C17.8274 49.4475 17.3505 49.25 16.8532 49.25C16.3559 49.25 15.879 49.4475 15.5273 49.7992C15.1757 50.1508 14.9782 50.6277 14.9782 51.125V52.0062C14.4157 51.6125 13.8344 51.2 13.2344 50.7313C12.6344 50.2625 12.5032 50.0938 12.1657 49.7563C11.8282 49.4188 10.9844 48.6125 10.4219 47.9938C6.41625 43.5124 4.06984 37.7921 3.77476 31.7887C3.47968 25.7853 5.25381 19.8624 8.8007 15.0099C12.3476 10.1573 17.4524 6.66892 23.2621 5.12767C29.0718 3.58641 35.2344 4.08563 40.7203 6.54191C46.2061 8.99818 50.6829 13.2627 53.4025 18.6229C56.122 23.9831 56.9197 30.1143 55.6622 35.9919C54.4046 41.8696 51.1681 47.1376 46.4933 50.9158C41.8186 54.694 35.9888 56.7534 29.9782 56.75C28.2147 56.7574 26.4552 56.5815 24.7282 56.225C24.4819 56.1758 24.2284 56.1755 23.9821 56.2242C23.7358 56.2729 23.5014 56.3697 23.2925 56.509C23.0836 56.6483 22.9041 56.8274 22.7644 57.036C22.6247 57.2447 22.5274 57.4788 22.4782 57.725C22.4289 57.9712 22.4287 58.2247 22.4774 58.4711C22.5261 58.7174 22.6229 58.9517 22.7622 59.1607C22.9015 59.3696 23.0805 59.549 23.2892 59.6888C23.4978 59.8285 23.7319 59.9258 23.9782 59.975C28.0634 60.7472 32.2645 60.6618 36.3149 59.7242C40.3654 58.7867 44.1767 57.0175 47.5072 54.5289C50.8376 52.0403 53.6145 48.8866 55.6615 45.268C57.7085 41.6493 58.9811 37.6447 59.3984 33.5081C59.8157 29.3716 59.3687 25.1935 58.0856 21.2389C56.8026 17.2843 54.7116 13.6395 51.9453 10.5359C49.179 7.4322 45.7978 4.93741 42.0162 3.20976C38.2347 1.48212 34.1353 0.559352 29.9782 0.5Z"
+                                    fill="#2D415D" />
+                                <path
+                                    d="M48.7285 30.5C48.7285 26.7916 47.6289 23.1665 45.5686 20.0831C43.5083 16.9996 40.58 14.5964 37.1538 13.1773C33.7277 11.7581 29.9577 11.3868 26.3206 12.1103C22.6834 12.8338 19.3425 14.6195 16.7203 17.2418C14.098 19.864 12.3123 23.2049 11.5888 26.8421C10.8653 30.4792 11.2366 34.2492 12.6558 37.6753C14.0749 41.1014 16.4782 44.0298 19.5616 46.0901C22.645 48.1503 26.2701 49.25 29.9785 49.25C34.9513 49.25 39.7205 47.2746 43.2368 43.7583C46.7531 40.242 48.7285 35.4728 48.7285 30.5ZM14.9785 30.5C14.9785 27.5333 15.8583 24.6332 17.5065 22.1665C19.1547 19.6997 21.4974 17.7771 24.2383 16.6418C26.9792 15.5065 29.9952 15.2095 32.9049 15.7882C35.8146 16.367 38.4873 17.7956 40.5851 19.8934C42.6829 21.9912 44.1115 24.6639 44.6903 27.5737C45.2691 30.4834 44.972 33.4994 43.8367 36.2403C42.7014 38.9812 40.7788 41.3238 38.3121 42.972C35.8453 44.6203 32.9452 45.5 29.9785 45.5C26.0003 45.5 22.185 43.9197 19.3719 41.1066C16.5589 38.2936 14.9785 34.4783 14.9785 30.5Z"
+                                    fill="#2D415D" />
+                                <path
+                                    d="M31.8535 39.875V39.5375C33.0936 39.0875 34.1361 38.216 34.7987 37.0754C35.4614 35.9347 35.702 34.5974 35.4786 33.2973C35.2552 31.9972 34.582 30.8169 33.5766 29.9628C32.5712 29.1088 31.2977 28.6352 29.9785 28.625C29.4812 28.625 29.0043 28.4275 28.6527 28.0758C28.3011 27.7242 28.1035 27.2473 28.1035 26.75C28.1035 26.2527 28.3011 25.7758 28.6527 25.4242C29.0043 25.0725 29.4812 24.875 29.9785 24.875H33.7285C34.2258 24.875 34.7027 24.6775 35.0543 24.3258C35.406 23.9742 35.6035 23.4973 35.6035 23C35.6035 22.5027 35.406 22.0258 35.0543 21.6742C34.7027 21.3225 34.2258 21.125 33.7285 21.125H31.8535C31.8535 20.6277 31.656 20.1508 31.3043 19.7992C30.9527 19.4475 30.4758 19.25 29.9785 19.25C29.4812 19.25 29.0043 19.4475 28.6527 19.7992C28.3011 20.1508 28.1035 20.6277 28.1035 21.125V21.4625C26.8634 21.9125 25.821 22.784 25.1583 23.9246C24.4957 25.0653 24.255 26.4026 24.4784 27.7027C24.7018 29.0028 25.375 30.1831 26.3804 31.0372C27.3858 31.8912 28.6594 32.3648 29.9785 32.375C30.4758 32.375 30.9527 32.5725 31.3043 32.9242C31.656 33.2758 31.8535 33.7527 31.8535 34.25C31.8535 34.7473 31.656 35.2242 31.3043 35.5758C30.9527 35.9275 30.4758 36.125 29.9785 36.125H26.2285C25.7312 36.125 25.2543 36.3225 24.9027 36.6742C24.5511 37.0258 24.3535 37.5027 24.3535 38C24.3535 38.4973 24.5511 38.9742 24.9027 39.3258C25.2543 39.6775 25.7312 39.875 26.2285 39.875H28.1035C28.1035 40.3723 28.3011 40.8492 28.6527 41.2008C29.0043 41.5525 29.4812 41.75 29.9785 41.75C30.4758 41.75 30.9527 41.5525 31.3043 41.2008C31.656 40.8492 31.8535 40.3723 31.8535 39.875Z"
+                                    fill="#2D415D" />
+                            </svg>
+                            <div class="title">
+                                <h6>100% Money Back</h6>
+                                <p>Make space in your home for plant. you’ll feel better for it, Not only are they
+                                    beautiful, but caring for them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+
+    <section class="experience">
+        <div class="container">
+            <div class="experience-wrapper text-center">
+                <h4>
+                    Our solution is to create the
+                </h4>
+                <div class="sub-title d-flex justify-content-between">
+                    <h4>awesome</h4>
+                    <h4>collections.</h4>
+                    <div class="image">
+                        <img src="images/experience.png" alt="">
+                    </div>
+                </div>
+                <div class="text text-center">
+                    <h4>and planting experience</h4>
+                </div>
+            </div>
+
+            <div class="experience-group  d-flex align-items-center justify-content-center">
+                <div class="experience-item text-center">
+                    <h4>120</h4>
+                    <p>Available Seeds</p>
+                </div>
+                <div class="leaf">
+                    <img src="images/leaf.png" alt="">
+                </div>
+                <div class="experience-item text-center">
+                    <h4>50+</h4>
+                    <p>Retail World Wide</p>
+                </div>
+                <div class="leaf">
+                    <img src="images/leaf.png" alt="">
+                </div>
+                <div class="experience-item text-center">
+                    <h4>120k</h4>
+                    <p>Sold World Wide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- gallery -->
+
+    <section class="gallery">
+        <div class="container">
+            <div class="title text-center">
+                <h4>
+                    <span>Happy</span> Customers gallery
+                </h4>
+
+                <p3>Make space in your home for plant. you’ll feel better for it, Not only are they beautiful, but
+                    caring for them helps us.</p3>
+            </div>
+            <div class="gallery-content">
+                <div class="splide" id="slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="images/gallery-1.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-3.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-4.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-3.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-4.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-3.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-wrapper d-flex">
+            <div class="container">
+                <div class="footer-image">
+                    <img src="images/footer-image.png" alt="">
+                </div>
+                <div class="footer-content">
+                    <div class="subscribe">
+                        <div class="title">
+                            <h5>Subscribe for all offers and updates</h5>
+                            <p>Make space in your home for plant. you’ll feel better for it, Not only are they
+                                beautiful, but
+                                caring
+                                for them helps us.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <input type="email" id="email" placeholder="Enter email address">
+                            <button id="subscribe-button">Submit Now</button>
+                        </div>
+                    </div>
+                    <div class="footer-list d-flex justify-content-between">
+                        <div class="col-md-2">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Plants</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Workshop</a></li>
+                                <li><a href="#">Consultancy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-link">
+                                <p3>Call us</p3>
+                                <p>9876543210</p>
+                            </div>
+                            <div class="contact-link">
+                                <p3>Email</p3>
+                                <p>plantcare@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright © 2024 Plant Care. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

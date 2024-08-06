@@ -1,0 +1,308 @@
+/* from 768px  to 1024px */
+
+@media only screen and (max-width: 1024px) {
+    p1 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 240px;
+    }
+
+    .navbar-brand img {
+        max-width: 190px;
+        height: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 18px;
+        padding-right: 25px;
+    }
+
+    .banner .title h1 {
+        margin-top: -116px;
+    }
+
+    .banner .title {
+        max-width: 630px;
+    }
+
+    .banner .plant-1 {
+        right: 72px;
+        top: 125px;
+    }
+
+    .banner .plant-2 {
+        left: 140px;
+        bottom: 360px;
+    }
+
+    .banner .plant-3 {
+        padding-top: 174px;
+    }
+
+    .about-us .bg-title {
+        left: 0;
+        bottom: 50px;
+    }
+
+    .about-us .title {
+        margin: 0;
+    }
+
+    footer .footer-image img {
+        max-width: 295px;
+        height: 393px;
+    }
+
+    .footer-wrapper .footer-image {
+        position: absolute;
+        left: 0;
+        top: 177px;
+    }
+
+
+    footer .copyright {
+        padding-top: 89px;
+        padding-bottom: 45px;
+    }
+
+    .gallery .gallery-content {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+/* from 426px to 768px */
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {}
+
+/* from 0 to 576px */
+
+@media (max-width: 576px) {
+    p1 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 154px;
+        line-height: 1;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 3;
+    }
+
+    p3 {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .free-shipping .title h6 {
+        padding-bottom: 5px;
+    }
+
+    .navbar-brand img {
+        max-width: 190px;
+        height: auto;
+    }
+
+    /* .experience-group {
+        flex-direction: column;
+    } */
+
+    .footer-content {
+        align-items: start;
+    }
+
+    .subscribe .title {
+        width: 100% !important;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    footer .footer-image {
+        display: none;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .subscribe-form button {
+        width: 100%;
+    }
+
+    .work-content {
+        padding: 0 15px;
+    }
+
+    .product .wrapper {
+        padding: 0 15px;
+    }
+
+    .shop .image {
+        top: -11px;
+        right: 0;
+        left: 97px;
+        max-width: 160px;
+    }
+
+    .experience .image {
+        top: -4px;
+        left: 95px;
+        max-width: 160px;
+    }
+
+    .gallery,
+    .experience,
+    .work,
+    .shop {
+        padding: 60px 0;
+    }
+
+    .experience .experience-group {
+        padding-top: 25px;
+    }
+
+    .gallery .gallery-content {
+        width: 77%;
+    }
+
+    .banner .plant-1 {
+        display: none;
+    }
+
+    .banner .title {
+        padding-top: 30px;
+    }
+
+    .banner .plant-2 {
+        display: none;
+    }
+
+    .about-us {
+        margin-top: 100px;
+    }
+
+    .banner .plant-3 {
+        padding-top: 50px;
+    }
+
+    .gallery .splide__pagination__page {
+        width: 12px;
+        height: 12px;
+    }
+
+    .work-content .title {
+        padding-bottom: 30px;
+    }
+
+    .about-us .bg-title h1 {
+        line-height: 75px;
+    }
+
+    .about-us .image {
+        max-width: 90px;
+    }
+
+    footer .copyright {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .banner .title h1 {
+        margin-top: -55px;
+    }
+
+    .banner .title p1 {
+        margin: 0;
+    }
+
+    .navbar {
+        background-color: #fff;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        padding-top: 25px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #2D415D;
+    }
+
+    .btn-cart {
+        position: absolute;
+        top: 11px;
+        right: 40px;
+    }
+
+    .navbar-toggler-icon {
+        position: absolute;
+        top: 20px;
+        right: 16px;
+    }
+
+    .banner {
+        height: 560px;
+        padding-top: 40px;
+    }
+
+    .product .button-group {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .product .button-group .custom-btn {
+        font-size: 16px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+    }
+
+    .element-item {
+        width: calc(50% - 30px);
+    }
+
+    .product .grid {
+        padding-left: 20px;
+    }
+
+    .experience .leaf {
+        margin: 0;
+    }
+
+    .btn-cart .svg-icon path {
+        fill: var(--primary-color);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #35A252;
+    }
+
+
+
+
+}
