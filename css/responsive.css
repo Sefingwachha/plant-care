@@ -338,7 +338,7 @@
     }
 
     .btn-cart .svg-icon path {
-        fill: var(--primary-color);
+        fill: var(--extra-color);
     }
 
     .navbar-expand-lg .navbar-nav .nav-link:hover {
