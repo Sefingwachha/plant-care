@@ -315,7 +315,7 @@ header {
     object-fit: contain;
     background-repeat: no-repeat;
     position: relative;
-    padding-bottom: 55px;
+    padding-bottom: 65px;
     background-position-x: center;
     padding-top: 127px;
 }
@@ -331,6 +331,10 @@ header {
     padding-bottom: 15px;
 }
 
+.banner-title {
+    position: relative;
+}
+
 .banner .title p1 {
     margin-left: 127px;
 }
@@ -343,8 +347,8 @@ header {
 
 .banner .plant-2 {
     position: absolute;
-    left: 140px;
-    bottom: 290px;
+    left: -170px;
+    bottom: -230px;
 }
 
 .banner .plant-3 {
@@ -373,7 +377,7 @@ header {
 .banner .button {
     margin: auto;
     max-width: 200px;
-    padding-top: 65px;
+    padding-top: 55px;
 }
 
 .btn-cart:hover .svg-icon path {
@@ -399,7 +403,7 @@ header {
 }
 
 .about-us .image {
-    max-width: 400px;
+    max-width: 440px;
 }
 
 .about-us .bg-title h1 {
@@ -409,7 +413,7 @@ header {
 .about-us .bg-title {
     position: absolute;
     left: 0;
-    bottom: 25px;
+    bottom: 55px;
 }
 
 .shop {
@@ -418,7 +422,7 @@ header {
 
 
 .shop .sub-title {
-    max-width: 680px;
+    max-width: 695px;
     margin: auto;
     position: relative;
 }
@@ -431,7 +435,7 @@ header {
     position: absolute;
     top: -11px;
     right: 0;
-    left: 220px
+    left: 224px
 }
 
 .shop .text {
@@ -471,10 +475,6 @@ header {
     transition: all 0.3s linear;
     left: 0;
     right: 0;
-}
-
-.product .wrapper {
-    padding: 0 80px;
 }
 
 .product .price p {
@@ -558,6 +558,11 @@ header {
 
 .work .free-shipping .title {
     padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.work .free-shipping svg {
+    width: 100px;
 }
 
 .work-content {
@@ -582,23 +587,23 @@ header {
 }
 
 .experience .sub-title {
-    max-width: 715px;
+    max-width: 775px;
     margin: auto;
     position: relative;
 }
 
 .sub-title h4 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .text h4 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .experience .image {
     position: absolute;
     top: -18px;
-    right: 35px;
+    right: -115px;
     left: 0;
 }
 
@@ -611,7 +616,7 @@ header {
 }
 
 .experience .experience-group h4 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .gallery {
@@ -682,12 +687,12 @@ footer .footer-image img {
 }
 
 .subscribe .title {
-    width: 690px;
+    width: 647px;
     padding-bottom: 50px;
 }
 
-.subscribe .title p {
-    max-width: 625px;
+.subscribe .title p3 {
+    color: var(--secondary-color);
 }
 
 .subscribe .title h5 {
@@ -706,7 +711,7 @@ footer .footer-image img {
     line-height: 28px;
     color: var(--secondary-color);
     background-color: #F4F8FB;
-    width: 380px;
+    width: 440px;
     border-radius: 8px;
     margin-right: 30px;
 }
@@ -723,12 +728,16 @@ footer .footer-image img {
     border: none;
     font-family: var(--secondary-fonts);
     font-size: 21px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 30px;
     color: #fff;
     padding: 15px 50px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #000;
 }
 
 .footer-list {
@@ -746,8 +755,16 @@ footer .footer-image img {
     line-height: 45px;
 }
 
+.footer-list a:hover {
+    color: var(--extra-color);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 footer .contact-link p3 {
     color: #2D415D;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 footer .contact-link {
@@ -762,9 +779,13 @@ footer .contact-link p {
     padding-top: 15px;
 }
 
+footer .number p {
+    letter-spacing: 2px;
+}
+
 footer .copyright {
     padding-top: 160px;
-    padding-bottom: 45px;
+    padding-bottom: 60px;
 }
 
 footer .copyright p {
