@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care</title>
+    <link rel="icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="plant.html" class="nav-link">Plants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="accesories.html" class="nav-link">Accesories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="care.html" class="nav-link">Plants Care</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button type="button" class="btn btn-cart">
+                        <svg class="svg-icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.88577 5.55672C9.47103 5.32378 10.1132 5.66921 10.32 6.32824C10.7834 7.80464 12.0339 8.85938 13.5002 8.85938C14.9666 8.85938 16.2172 7.80464 16.6806 6.32824C16.8874 5.66921 17.5295 5.32378 18.1149 5.55672C18.7001 5.78966 19.0068 6.51274 18.8 7.17176C18.029 9.62788 15.9489 11.3906 13.5002 11.3906C11.0517 11.3906 8.97156 9.62788 8.20063 7.17176C7.99376 6.51274 8.30052 5.78966 8.88577 5.55672ZM14.0403 2.53125H12.9595C10.5231 2.53125 8.90158 2.53576 7.67342 2.70663C6.50702 2.8689 5.96938 3.15104 5.5921 3.50364C5.21479 3.85622 4.86946 4.39928 4.51285 5.6603C4.13738 6.98809 3.8346 8.78204 3.38559 11.4785C2.75621 15.2584 2.33426 17.8257 2.2593 19.7594C2.18705 21.6235 2.46442 22.4159 2.85388 22.9443C3.24333 23.4726 3.88386 23.9257 5.5241 24.1893C7.22579 24.4627 9.54444 24.4688 12.9595 24.4688H14.0403C17.4556 24.4688 19.7743 24.4627 21.4759 24.1893C23.1161 23.9257 23.7566 23.4726 24.1461 22.9443C24.5356 22.4159 24.813 21.6235 24.7407 19.7594C24.6658 17.8257 24.2438 15.2584 23.6144 11.4785C23.1654 8.78204 22.8626 6.98809 22.4872 5.6603C22.1305 4.39928 21.7852 3.85622 21.4079 3.50364C21.0307 3.15104 20.493 2.8689 19.3266 2.70663C18.0984 2.53576 16.4767 2.53125 14.0403 2.53125ZM4.1565 1.55581C2.49173 3.11163 2.05321 5.74513 1.1762 11.0121C-0.0570218 18.4184 -0.673634 22.1216 1.12411 24.5607C2.92185 27 6.26778 27 12.9595 27H14.0403C20.7322 27 24.0781 27 25.8759 24.5607C27.6736 22.1216 27.057 18.4184 25.8238 11.0121C24.9468 5.74513 24.5083 3.11163 22.8435 1.55581C21.1787 -2.01166e-07 18.7993 0 14.0403 0H12.9595C8.20073 0 5.82129 -2.01166e-07 4.1565 1.55581Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+                                <g fill="none" fill-rule="evenodd" stroke="#35A252" stroke-linecap="square"
+                                    stroke-width="2">
+                                    <path d="M0 1L20 1M0 7L20 7M0 13L15 13" transform="translate(1)"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="navbar-toggler-icon close-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                                    fill="#35A252" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section class="banner sub-banner">
+        <div class="container">
+            <div class="plant-1">
+                <img src="images/plant-1.png" alt="">
+            </div>
+            <div class="title banner-title text-center">
+                <h4>Plants</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- popular plant -->
+
+    <section class="popular space">
+        <div class="container">
+            <div class="title">
+                <h5>Our Most Popular Plants
+                </h5>
+            </div>
+            <div class="product-content popular-wrapper">
+                <div class="splide" id="product-slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/fatsia.png" alt="Fatsia japonica">
+                                    </div>
+                                    <div class="price">
+                                        <a href="product-detail.html">
+                                            <p>Fatsia japonica</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/rhapis.png" alt="Rhapis Palm">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Rhapis Palm</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/lucky.png" alt="Lucky Bamboo (3 Tier)">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Lucky Bamboo (3 Tier)</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/jade.png" alt="Jade Plant With Ceramic pot">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Jade Plant With Ceramic pot</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Monstera Deliciosa</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/lucky.png" alt="Lucky Bamboo (3 Tier)">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Lucky Bamboo (3 Tier)</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/jade.png" alt="Jade Plant With Ceramic pot">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Jade Plant With Ceramic pot</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- gallery -->
+
+    <section class="gallery pets">
+        <div class="container">
+            <div class="title">
+                <h5>
+                    Pets Friendly
+                </h5>
+            </div>
+            <div class="gallery-content">
+                <div class="splide" id="slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="images/gallery-1.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-3.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-4.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-3.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-4.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/gallery-3.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new arrival -->
+
+    <section class="popular">
+        <div class="container">
+            <div class="title">
+                <h5>New Arrival
+                </h5>
+            </div>
+            <div class="product-content">
+                <div class="splide" id="new-arrival">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/small-snake.jpg" alt="Fatsia japonica">
+                                    </div>
+                                    <div class="price">
+                                        <a href="product-detail.html">
+                                            <p>Fatsia japonica</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/hyde_cream.jpg" alt="Rhapis Palm">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Rhapis Palm</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/the-still.jpg" alt="Lucky Bamboo (3 Tier)">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Lucky Bamboo (3 Tier)</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/the-si.jpg" alt="Jade Plant With Ceramic pot">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Jade Plant With Ceramic pot</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/the-sill_Large-Garde.jpg" alt="Monstera Deliciosa">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Monstera Deliciosa</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/hyde_cream.jpg" alt="Lucky Bamboo (3 Tier)">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Lucky Bamboo (3 Tier)</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/hyde.webp" alt="Jade Plant With Ceramic pot">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Jade Plant With Ceramic pot</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- new arrival -->
+
+    <section class="popular space">
+        <div class="container">
+            <div class="title">
+                <h5>Best For Beginners
+                </h5>
+            </div>
+            <div class="product-content">
+                <div class="splide" id="beginner">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/the-si.jpg" alt="Jade Plant With Ceramic pot">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Jade Plant With Ceramic pot</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/the-sill_Large-Garde.jpg" alt="Monstera Deliciosa">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Monstera Deliciosa</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/hyde_cream.jpg" alt="Lucky Bamboo (3 Tier)">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Lucky Bamboo (3 Tier)</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/small-snake.jpg" alt="Fatsia japonica">
+                                    </div>
+                                    <div class="price">
+                                        <a href="product-detail.html">
+                                            <p>Fatsia japonica</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/hyde_cream.jpg" alt="Rhapis Palm">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Rhapis Palm</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/the-still.jpg" alt="Lucky Bamboo (3 Tier)">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Lucky Bamboo (3 Tier)</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <img src="images/hyde.webp" alt="Jade Plant With Ceramic pot">
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            <p>Jade Plant With Ceramic pot</p>
+                                        </a>
+                                        <p>$ 70</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-wrapper d-flex">
+            <div class="container">
+                <div class="footer-image">
+                    <img src="images/footer-image.png" alt="">
+                </div>
+                <div class="footer-content">
+                    <div class="subscribe">
+                        <div class="title">
+                            <h5>Subscribe For All Offers And Updates</h5>
+                            <p3>Make space in your home for plant. you’ll feel better for it, Not only are they
+                                beautiful, but
+                                caring
+                                for them helps us.</p3>
+                        </div>
+                        <div class="subscribe-form">
+                            <input type="email" name="email" id="email" autocomplete="given-name"
+                                placeholder="Enter email address">
+                            <button id="subscribe-button">Submit Now</button>
+                        </div>
+                    </div>
+                    <div class="footer-list d-flex justify-content-between">
+                        <div class="col-md-2">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Plants</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Workshop</a></li>
+                                <li><a href="#">Consultancy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-link number">
+                                <p3>Call us</p3>
+                                <p>9876543210</p>
+                            </div>
+                            <div class="contact-link">
+                                <p3>Email</p3>
+                                <p>plantcare@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright © 2024 Plant Care. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
