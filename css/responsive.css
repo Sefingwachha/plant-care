@@ -182,7 +182,7 @@
         right: 70px;
     }
 
- 
+
 
 }
 
@@ -438,7 +438,7 @@
         max-width: 100%;
         width: 100%;
         height: 280px;
-        
+
     }
 
     .popular .product-item {
@@ -465,7 +465,7 @@
         padding: 0;
     }
 
-    .sub-banner h4{
+    .sub-banner h4 {
         margin: 0;
         font-size: 40px;
         font-weight: 600;
@@ -481,6 +481,10 @@
 
     .gallery img {
         width: 100%;
+    }
+
+    .product .accessories-product .product-img img {
+        height: 270px;
     }
 
 
