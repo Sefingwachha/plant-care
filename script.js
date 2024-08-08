@@ -165,3 +165,43 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+
+const navbarToggler = document.getElementById('navbar-toggler');
+
+navbarToggler.addEventListener('click', function () {
+    this.classList.toggle('collapsed');
+});
+
+
+
+// gallery
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide("#slider", {
+    autoplay: true,
+    type: "loop",
+    perPage: 4,
+    gap: "0",
+    arrows: false,
+    pagination: true,
+    breakpoints: {
+      1020: {
+        perPage: 3,
+        gap: "10px",
+      },
+      600: {
+        perPage: 1,
+        gap: "10px",
+        padding: {
+          left: "0",
+          right: "0",
+        },
+      },
+    },
+  });
+
+  splide.mount();
+});
+
+
